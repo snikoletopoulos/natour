@@ -5,15 +5,11 @@
 /.pnp
 .pnp.js
 
-# testing
+# CSS compiled files
 /coverage
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
+# VS code files
+/.vscode
 
 # misc
 .DS_Store
