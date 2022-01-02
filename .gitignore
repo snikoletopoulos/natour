@@ -6,7 +6,7 @@
 .pnp.js
 
 # CSS compiled files
-/coverage
+/css
 
 # VS code files
 /.vscode
