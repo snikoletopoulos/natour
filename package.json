@@ -1,23 +1,21 @@
 {
   "name": "natour",
   "version": "1.0.0",
-  "description": "Natour",
+  "author": "Stavros Nikoletopoulos",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass -w sass/main.scss css/main.css",
-    "build": "node-sass sass/main.scss css/main.css"
+    "watch:sass": "node-sass -w sass/main.scss css/main.css",
+    "build": "node-sass sass/main.scss css/main.css",
+    "format": "prettier --write .",
+    "lint": "stylelint ./sass",
+    "dev": "concurrently --kill-others -n sass,server \"npm run watch:sass\" \"npm run serve\"",
+    "serve": "live-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/snikoletopoulos/Natour.git"
-  },
-  "author": "Stavros",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/snikoletopoulos/Natour/issues"
-  },
-  "homepage": "https://github.com/snikoletopoulos/Natour#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "node-sass": "^7.0.1",
+    "stylelint": "^16.3.1"
   }
 }
