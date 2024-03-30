@@ -50,7 +50,7 @@
   }
 
   &--animation {
-    animation: moveInBottom 0.5s ease-out 0.75s;
-    animation-fill-mode: backwards; /*? Learn more */
+    animation: move-in-bottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards; /* TODO: Learn more */
   }
 }

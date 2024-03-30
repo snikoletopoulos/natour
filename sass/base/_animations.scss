@@ -1,4 +1,4 @@
-@keyframes moveInLeft {
+@keyframes move-in-left {
   0% {
     opacity: 0;
     transform: translateX(-100px);
@@ -14,7 +14,7 @@
   }
 }
 
-@keyframes moveInRight {
+@keyframes move-in-right {
   0% {
     opacity: 0;
     transform: translateX(100px);
@@ -30,7 +30,7 @@
   }
 }
 
-@keyframes moveInBottom {
+@keyframes move-in-bottom {
   0% {
     opacity: 0;
     transform: translateY(30px);
