@@ -9,7 +9,7 @@
     "build": "node-sass sass/main.scss css/main.css",
     "format": "prettier --write .",
     "lint": "stylelint ./sass",
-    "dev": "concurrently --kill-others -n sass,server \"npm run watch:sass\" \"npm run serve\"",
+    "dev": "concurrently --kill-others -c magenta,cyan -n sass,server \"npm run watch:sass\" \"npm run serve\"",
     "serve": "live-server"
   },
   "devDependencies": {
