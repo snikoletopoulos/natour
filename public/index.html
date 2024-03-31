@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Metrics -->
     <script>
       window.va =
         window.va ||
@@ -20,15 +19,85 @@
     </script>
     <script defer src="/_vercel/speed-insights/script.js"></script>
 
+    <!-- Styles -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/icon-font.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="/css/main.css" />
 
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/img/favicon/favicon.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Natours | Exciting tours for adventurous people"
+    />
+    <meta property="og:url" content="https://nikero-natours.vercel.app" />
+    <meta
+      property="og:image"
+      content="https://nikero-natours.vercel.app/img/logo-green-2x.png"
+    />
+    <meta
+      property="og:description"
+      content="A project for learning advance CSS, Sass and animations."
+    />
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Natours | Exciting tours for adventurous people"
+    />
+    <meta name="twitter:site" content="@snikoletopoulos" />
+    <meta
+      name="twitter:description"
+      content="A project for learning advance CSS, Sass and animations."
+    />
+    <meta
+      name="twitter:image"
+      content="https://nikero-natours.vercel.app/img/logo-green-2x.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="The logo provided from the course"
+    />
+
+    <meta
+      name="description"
+      content="A project for learning advance CSS, Sass and animations."
+    />
+    <meta name="author" content="Stavros Nikoletopouls" />
+    <meta name="copyright" content="Stavros Nikoletopoulos" />
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
 
@@ -294,6 +363,7 @@
       <section class="section-stories" id="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
+            <track kind="captions" />
             <source src="img/video.mp4" type="video/mp4" />
             <source src="img/video.webm" type="video/webm" />
             Your browser is not supported!
