@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass -w sass/main.scss css/main.css",
+    "watch:sass": "node-sass -w sass/main.scss public/css/main.css",
     "build": "node-sass sass/main.scss public/css/main.css",
     "format": "prettier --write .",
     "lint": "stylelint ./sass",
