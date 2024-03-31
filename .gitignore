@@ -6,7 +6,7 @@
 .pnp.js
 
 # CSS compiled files
-/css
+public/css
 
 # VS code files
 /.vscode
