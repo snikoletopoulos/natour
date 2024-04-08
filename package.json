@@ -1,24 +1,25 @@
 {
-  "name": "natours",
-  "version": "1.0.0",
-  "author": "Stavros Nikoletopoulos",
-  "license": "MIT",
-  "main": "index.js",
-  "scripts": {
-    "watch:sass": "node-sass -w sass/main.scss public/css/main.css",
-    "build": "node-sass sass/main.scss public/css/main.css",
-    "format": "prettier --write .",
-    "lint": "stylelint ./sass",
-    "dev": "concurrently --kill-others -c magenta,cyan -n sass,server \"npm run watch:sass\" \"npm run serve\"",
-    "serve": "live-server --no-css-inject --port=3000 --no-browser public"
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.2",
-    "live-server": "^1.2.2",
-    "node-sass": "^7.0.3",
-    "stylelint": "^16.3.1"
-  },
-  "engines": {
-    "node": "<19.0.0"
-  }
+	"name": "natours",
+	"version": "1.0.0",
+	"author": "Stavros Nikoletopoulos",
+	"license": "MIT",
+	"main": "index.js",
+	"scripts": {
+		"watch:sass": "node-sass -w sass/main.scss public/css/main.css",
+		"build": "node-sass sass/main.scss public/css/main.css",
+		"format": "prettier --write .",
+		"lint": "stylelint ./sass",
+		"dev": "concurrently --kill-others -c magenta,cyan -n sass,server \"npm run watch:sass\" \"npm run serve\"",
+		"serve": "live-server --no-css-inject --port=3000 --no-browser public"
+	},
+	"devDependencies": {
+		"concurrently": "^8.2.2",
+		"live-server": "^1.2.2",
+		"node-sass": "^7.0.3",
+		"prettier": "^3.2.5",
+		"stylelint": "^16.3.1"
+	},
+	"engines": {
+		"node": "<19.0.0"
+	}
 }
