@@ -12,4 +12,42 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+/* Media query manager */
+
+/**
+ * $breakpoint arguments choices:
+ * - phone
+ * - tab-port
+ * - tab-land
+ * - big-desktop
+ */
+@mixin response($breakpoint) {
+	@if $breakpoint == phone {
+		/* 600px */
+		@media (max-width: 37.5em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-port {
+		/* 900px */
+		@media (max-width: 56.5em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-land {
+		/* 1200px */
+		@media (max-width: 75em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == big-desktop {
+		/* 1800px */
+		@media (min-width: 122.5em) {
+			@content;
+		}
+	}
 }
