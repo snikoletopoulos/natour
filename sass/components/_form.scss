@@ -98,7 +98,6 @@
 		}
 	}
 
-	/* TODO: check selector */
 	&__radio-input:checked ~ &__radio-label &__radio-button::after {
 		opacity: 1;
 	}
