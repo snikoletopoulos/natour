@@ -210,19 +210,25 @@
 					<div class="col-1-of-2">
 						<div class="composition">
 							<img
+								srcset="img/nat-1.webp 300w, img/nat-1-large.webp 1000w"
 								src="img/nat-1-large.webp"
-								alt="Photo 1"
+								sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
 								class="composition__photo composition__photo--p1"
+								alt="Photo 1"
 							/>
 							<img
-								src="img/nat-2-large.webp"
-								alt="Photo 2"
+								srcset="img/nat-2.webp 300w, img/nat-2-large.webp 1000w"
+								src="img/nat-1-large.webp"
+								sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
 								class="composition__photo composition__photo--p2"
+								alt="Photo 2"
 							/>
 							<img
-								src="img/nat-3-large.webp"
-								alt="Photo 3"
+								srcset="img/nat-3.webp 300w, img/nat-3-large.webp 1000w"
+								src="img/nat-1-large.webp"
+								sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
 								class="composition__photo composition__photo--p3"
+								alt="Photo 3"
 							/>
 						</div>
 					</div>
@@ -507,11 +513,21 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__logo-box">
-				<img
-					src="img/logo-green-2x.webp"
-					alt="Full logo"
-					class="footer__logo"
-				/>
+				<picture class="footer_logo">
+					<source
+						srcset="
+							img/logo-green-small-1x.webp 1x,
+							img/logo-green-small-2x.webp 2x
+						"
+						media="(max-width: 37.5rem)"
+					/>
+					<img
+						srcset="img/logo-green-2x.webp 1x, img/logo-green-2x.webp 2x"
+						src="img/logo-green-2x.webp"
+						alt="Full logo"
+						class="footer__logo"
+					/>
+				</picture>
 			</div>
 
 			<div class="row">
