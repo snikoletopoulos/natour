@@ -79,4 +79,59 @@
 		opacity: 1;
 		transform: translate(-50%, -50%) scale(1);
 	}
+
+	@include response(tab-land) {
+		&__content {
+			display: block;
+		}
+
+		&__left {
+			width: 100%;
+			display: block;
+			background-color: $color-grey-light-2;
+			height: 20vh;
+
+			@include clearfix;
+		}
+
+		&__right {
+			width: 100%;
+			height: 50%;
+			display: block;
+		}
+
+		&__img {
+			width: 50%;
+			display: block;
+			float: left;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	@include response(tab-port) {
+		&__left {
+			height: 10vh;
+		}
+	}
+
+	@include response(phone) {
+		&__content {
+			width: 80%;
+		}
+
+		&__left {
+			height: 0;
+		}
+
+		&__img {
+			display: none;
+		}
+
+		&__text {
+			column-count: 1;
+			column-gap: 0;
+			column-rule: none;
+		}
+	}
 }
